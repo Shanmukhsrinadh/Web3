@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: beige;
+
+        }
+        .main div{
+            width: 250px;
+            border: 2px solid red;
+        }
+        
+
+        .main div:hover .content{
+            display: block;
+        }
+        .main div img{
+            width: 100%;
+        }
+        .child{
+            position: relative;
+        }
+        .content{
+            position: absolute;
+            top: 0;
+            display: none;
+        }
+        .contact{
+            height: 400px;
+            background-color: #000000;
+            text-align: center;
+        }
+        input{
+            border: none;
+            border-bottom:2px solid;
+            background-color: #000000;
+            margin: 2%;
+        }
+        input:focus{
+            border: none;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child">
+            <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            <div class="content">
+                <h3>Services One</h3>
+                <p>Content</p>
+            </div>
+        </div>
+        <div class="child">
+            <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            <div class="content">
+                <h3>Services One</h3>
+                <p>Content</p>
+            </div>
+        </div>
+        <div class="child">
+            <img src="https://next-images.123rf.com/index/_next/image/?url=https://assets-cdn.123rf.com/index/static/assets/top-section-bg.jpeg&w=3840&q=75" alt="">
+            <div class="content">
+                <h3>Services One</h3>
+                <p>Content</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <form >
+            <input type="text" placeholder="Enter Your use Name"><br/>
+            <input type="password" placeholder="Enter Your Passwword"><br/>
+           
+        </form>
+        <button>click</button>
+    </div>
+</body>
+</html>

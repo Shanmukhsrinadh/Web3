@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/header.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #Home{
+            height: 400px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua;
+            animation-name: Trail3;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Trail3{
+            to{background-color: aqua;}
+            from{background-color: maroon;}
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            flex-wrap: wrap;
+            background-color: maroon;
+            animation-name: Trail;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        @keyframes Trail{
+            0%{left:0%;top: 0%;}
+            25%{left: 50%;top: 0%;}
+            50%{left: 50%;top: 50%;}
+            75%{left: 0%;top: 50%;}
+            100%{left: 0%;top: 0%;}
+        }
+        .child2{
+            height: 100px;
+            width: 100px;
+            flex-wrap: wrap;
+            background-color: maroon;
+            animation-name: Trail2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+        @keyframes Trail2{
+            0%{left:93%;top: 0%;}
+            25%{left: 50%;top: 0%;}
+            50%{left: 50%;top: 50%;}
+            75%{left: 93%;top: 50%;}
+            100%{left: 93%;top: 0%;}
+        }
+
+#blog {
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    background-color: aqua; 
+    position: relative; 
+}
+
+
+.smack1 {
+    height: 250px;
+    width: 250px;
+    background-image: url(Img/beautiful-mountain-landscape.jpg); 
+    background-position:center ;
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    animation-name: smackanimation;
+    animation-timeline: view();
+    animation-duration: 4s; 
+}
+
+
+@keyframes smackanimation {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+}
+
+
+.smack2 {
+    height: 250px;
+    width: 250px;
+    background-image: url(Img/beautiful-landscape-mother-nature.jpg);
+    background-position: center;
+    position: absolute;
+    bottom: 2%;
+    right: 15%;
+    animation-name: smackanimation2;
+    animation-duration: 4s; 
+    animation-timeline: view();
+}
+
+
+@keyframes smackanimation2 {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#section3{
+    height: 400px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Img/logo.jpg" alt="logo" width="70px" height="70px">
+        <ul>
+                <a href="Index.html"><li>Home</li> </a>
+                <a href="about.html"><li>About</li></a>
+                <a href="Services.html"> <li>Services</li> </a>
+                <a href="Blog.html"> <li>Blog</li> </a>
+                <a href="Animations.html"> <li>Animations</li> </a>
+        </ul>
+</div>
+<div id="Home">
+    <div class="child"></div>
+    <div class="child2"></div>
+
+    </div>
+
+    <div id="blog">
+        <div class="smack1"></div>
+        <div class="smack2"></div>
+    </div>
+    
+<div id="section3"></div>
+    
+
+</body>
+</html>
